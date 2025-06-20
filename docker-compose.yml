@@ -1,0 +1,19 @@
+services:
+  bot-service:
+    build: ./bot
+    container_name: telegram_bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - BACK_SERVICE=http://back-service:8000
+    depends_on:
+      - back-service
+
+  back-service:
+    build: ./back
+    ports:
+      - "8009:8000"
+    volumes:
+      - reminder_db:/app/instance
+
+volumes:
+  reminder_db: 
