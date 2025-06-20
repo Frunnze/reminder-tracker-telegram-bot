@@ -1,4 +1,15 @@
-## Teck stack
+## Overview
+<p align="center">
+  <img src="assets/img1.jpg" alt="Description" width="200"/>
+  <img src="assets/img2.jpg" alt="Description" width="200"/>
+  <img src="assets/img3.jpg" alt="Description" width="200"/>
+  <img src="assets/img4.jpg" alt="Description" width="200"/>
+  <br/>
+  <em>Figure 1: User clicks 'Start work' and choses the work duration (image 1), which sets an alarm (image 2); in 50 minutes, the alarm is triggered (image 3); after the user stops the alarm, the user can see the progress and can choose the break duration, which would also trigger an alarm to stop the break (image 4). </em>
+</p>
+
+
+## Tech stack
 Python, Flask, SQLite, SQLAlchemy, python-telegram-bot library;
 
 ## Installing
